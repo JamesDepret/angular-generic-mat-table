@@ -13,7 +13,7 @@ import {createNewUserData} from '../mock/functions/mock-data';
 export class AppComponent  {
   introText = 'Button actions and payloads come here in textual form';
   columns: TableColumn[];   // this will define what you pass over to the table
-  buttons: TableBtn[];   // this will define what you pass over to the table
+  buttons: TableBtn[];      // this will define what you pass over to the table
   data: UserData[];         // this is example data but you can use any object to pass to the table
   totalVolume: number = 0;  // this is an example field used to show how you can access filtered data from the table
   totalRides: number = 0;
