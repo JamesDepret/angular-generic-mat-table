@@ -1,9 +1,9 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {UserData} from '../interfaces/user-data';
-import {TableColumn} from '../interfaces/table-column';
-import {TableBtn} from '../interfaces/table-btn';
+import {UserData} from '../mock/interfaces/user-data';
+import {TableColumn} from '../shared/interfaces/';
+import {TableBtn} from '../shared/interfaces/';
 
-import {createNewUserData} from '../shared/functions/mock-data';
+import {createNewUserData} from '../mock/functions/mock-data';
 
 @Component({
   selector:    'my-app',

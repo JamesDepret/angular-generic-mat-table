@@ -2,8 +2,8 @@ import {Component, Input, Output, EventEmitter, OnInit, ViewChild, OnChanges, Si
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
-import {TableColumn} from '../../interfaces/table-column';
-import {TableBtn} from '../../interfaces/table-btn';
+import {TableColumn} from '../interfaces';
+import {TableBtn} from '../interfaces';
 
 /**
  * @title Data table with sorting, pagination, and filtering.
