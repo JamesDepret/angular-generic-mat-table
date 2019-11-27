@@ -11,6 +11,7 @@ import {createNewUserData} from '../shared/functions/mock-data';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  introText = 'Button actions and payloads come here in textual form';
   columns: TableColumn[];   // this will define what you pass over to the table
   buttons: TableBtn[];   // this will define what you pass over to the table
   data: UserData[];         // this is example data but you can use any object to pass to the table
@@ -57,7 +58,7 @@ export class AppComponent  {
 
   // Here we can get the action and payload back from the table
   buttonClick(result: string[]) {
-    console.log(`action: ${result[0]}, payload ${result[1]}`);
+    this.introText = `action: ${result[0]}, payload ${result[1]}`;
   }
 }
 
