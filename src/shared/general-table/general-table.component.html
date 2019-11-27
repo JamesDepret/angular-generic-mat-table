@@ -41,6 +41,7 @@
       </ng-container>
     </table>
 
-    <mat-paginator [pageSizeOptions]="pagination" [pageSize]="pageSize"></mat-paginator>
+    <mat-paginator [pageSizeOptions]="pagination" [pageSize]="pageSize" 
+  [ngStyle]="{ 'min-width': ' tableMinWidth + 'px' }"></mat-paginator>
   </div>
 
