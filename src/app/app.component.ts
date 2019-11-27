@@ -24,6 +24,7 @@ export class AppComponent  {
     this.data = Array.from({length: 100}, (_, k) => createNewUserData(k + 1));
 
     // build the colums; columnDef: attribute name; header: column title; cell: row text
+    // note that the cell attribute is the same as the columnDef attribute
     this.columns = [
       { columnDef: 'date',     header: 'Datum',    cell: (element: UserData) => `${element.date.toLocaleDateString()}` },
       { columnDef: 'name',     header: 'Name',     cell: (element: UserData) => `${element.name}` },
@@ -32,7 +33,7 @@ export class AppComponent  {
       { columnDef: 'material', header: 'Material', cell: (element: UserData) => `${element.material}` },
     ];
 
-    // build the buttons; styleClass: button style; icon: which material icon should be used; payload: what value form the object should be returned; action: what name should he action have
+    // build the buttons; styleClass: button style; icon: which material icon should be used; payload: what value from the object should be returned; action: what name should the action have
     this.buttons = [
       { styleClass: 'btn btn-success px-2',     icon: 'note_add',    payload: (element: UserData) => `${element.id}`, action: 'add' },
       { styleClass: 'btn btn-primary px-2',     icon: 'build',    payload: (element: UserData) => `${element.id}`, action: 'edit' },
