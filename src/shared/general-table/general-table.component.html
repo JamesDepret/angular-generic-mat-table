@@ -4,7 +4,7 @@
   </mat-form-field>
 
   <div class="mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource" matSort>
+    <table mat-table [dataSource]="dataSource" matSort [ngStyle]="{ 'min-width': + tableMinWidth + 'px' }">
 
       <ng-container *ngFor="let column of columns" >
         <ng-container matColumnDef="{{column.columnDef}}">
@@ -42,6 +42,6 @@
     </table>
 
     <mat-paginator [pageSizeOptions]="pagination" [pageSize]="pageSize" 
-  [ngStyle]="{ 'min-width': ' tableMinWidth + 'px' }"></mat-paginator>
+  [ngStyle]="{ 'min-width': + tableMinWidth + 'px' }"></mat-paginator>
   </div>
 

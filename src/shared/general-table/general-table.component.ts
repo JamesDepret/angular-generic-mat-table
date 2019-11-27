@@ -22,6 +22,7 @@ export class GeneralTableComponent implements OnChanges {
   @Input() filterPlaceholder: string = 'Filter';
   @Input() pagination: number[] = [];
   @Input() pageSize: number;
+  @Input() tableMinWidth: number = 500;
   @Output() filteredData = new EventEmitter<any[]>();
   @Output() buttonClick = new EventEmitter<string[]>();
 
