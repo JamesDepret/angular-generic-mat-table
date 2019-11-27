@@ -6,11 +6,11 @@
 <general-table  [columns]="columns"
                 [buttons]="buttons"
                 [data]="data"
+                [filter]="true"
+                [filterPlaceholder]="'Filter any value'"
                 [footer]="footer" 
                 [pagination]="[5, 25, 100]"
                 [pageSize]="5"
-                [filter]="true"
-                [filterPlaceholder]="'Filter any value'"
                 (filteredData)="applyFilter($event)"
                 (buttonClick)="buttonClick($event)">
                 <!-- columns: required,

@@ -17,9 +17,9 @@ export class GeneralTableComponent implements OnChanges {
   @Input() columns: TableColumn[] = [];
   @Input() buttons: TableBtn[] = [];
   @Input() data: any[] = [];
-  @Input() footer: string = null;
   @Input() filter: boolean = false;
   @Input() filterPlaceholder: string = 'Filter';
+  @Input() footer: string = null;
   @Input() pagination: number[] = [];
   @Input() pageSize: number;
   @Input() tableMinWidth: number = 500;
