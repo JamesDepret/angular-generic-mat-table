@@ -1,0 +1,26 @@
+<h1>Header intro</h1>
+<div class="row">
+  <label class="col-12 col-form-label pt-3" >Other stuff goes here</label>
+</div>
+
+<general-table  [columns]="columns"
+                [buttons]="buttons"
+                [data]="data"
+                [footer]="footer" 
+                [pagination]="[5, 25, 100]"
+                [pageSize]="5"
+                [filter]="true"
+                [filterPlaceholder]="'Filter any value'"
+                (filteredData)="applyFilter($event)"
+                (buttonClick)="buttonClick($event)">
+                <!-- columns: required,
+                     data: required
+                     footer: not required, if null => no footer
+                     pagination: not required, if null => 50 items per page
+                     pageSize: not required, if null => min size of pagination
+                     filter: not required, if null => no filter
+                     filterPlaceholder: not required, if null => 'Filter'
+                     filteredData: not required, passes the filter back
+                  -->
+                  <button>test</button>
+</general-table>
