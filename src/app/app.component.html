@@ -3,6 +3,7 @@
   <div class="col-12  pt-3" >{{introText}}</div>
 </div>
 
+<h3 class="mt-4">Maxed table</h3>
 <general-table  [columns]="columns"
                 [buttons]="buttons"
                 [data]="data"
@@ -25,5 +26,11 @@
                      filteredData: not required, passes the filter back
                      buttonClick: not required, passes a action an payload in a string array back to the app.component
                   -->
-                  <button>test</button>
 </general-table>
+
+<h3 class="py-2 mt-4">Minimalist table</h3>
+
+<general-table  [columns]="columns"
+                [data]="data">
+</general-table>
+
